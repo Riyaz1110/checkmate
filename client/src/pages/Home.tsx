@@ -13,7 +13,7 @@ import { Database, Brain, Cloud, LineChart } from "lucide-react";
 import { motion } from "framer-motion";
 import intiLogo from "@assets/inti-logo.png";
 import ucsiLogo from "@assets/ucsi-logo.png";
-
+import VideoSection from "@/components/VideoSection";
 /* ---------------- Refined Animation Variants ---------------- */
 
 const sectionVariants = {
@@ -357,7 +357,7 @@ export default function Home() {
           linkedin="https://www.linkedin.com/in/drsneelakandan "
           youtube="https://youtube.com"
         />
-
+        <VideoSection />
         {/* 🚀 EXTRAORDINARY Current Appointments Section */}
         <motion.section
           className="py-16 lg:py-24 relative"

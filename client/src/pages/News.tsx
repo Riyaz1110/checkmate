@@ -15,14 +15,20 @@ import mayForumPhoto2 from "@assets/mayf2.png";
 import mayForumPhoto3 from "@assets/mayf3.png";
 import mayForumPhoto4 from "@assets/mayf4.png";
 import mayForumPhoto5 from "@assets/mayf5.png";
-
+import Recognized from "@assets/Recognized.png"
 // Add these imports for the RMK IEEE conference photos
 import rmkEventPhoto1 from "@assets/rmk1.png";
 import rmkEventPhoto2 from "@assets/rmk2.png";
 import rmkEventPhoto3 from "@assets/rmk3.png";
 import rmkEventPhoto4 from "@assets/rmk4.png";
-
+import keynotelink from "@assets/keynotelink.png";
 // Add new imports for April grant and Malaysia visit photos
+
+import bits1 from "@assets/bits1.png";
+import bits2 from "@assets/bits2.png";
+import bits3 from "@assets/bits3.png";
+import bits4 from "@assets/bits4.png";
+
 import aprilGrantPhoto from "@assets/aprilgrant.png";
 import decINTIPhoto1 from "@assets/dec_inti1.png";
 import decINTIPhoto2 from "@assets/dec_inti2.png";
@@ -51,9 +57,305 @@ import sep2023ProfPhoto from "@assets/sep2023_prof.png"; // replace with your re
 import nov2021OracleImg from "@assets/nov2021_oracle.png";      // Oracle certificate image
 import aug2020HackathonImg from "@assets/aug2020_hackathon.png"; // Hackathon winner image
 
+import rd1 from "@assets/rd1.png";
+import rd2 from "@assets/rd2.png";
+
+import prof1 from "@assets/prof1.png"; 
+
+import modi1 from "@assets/modi1.png";
+import modi2 from "@assets/modi2.png";
+import modi3 from "@assets/modi3.png";
+
+import modi21 from "@assets/modi21.png";
+import modi22 from "@assets/modi22.png";
+import modi23 from "@assets/modi23.png";
+import modi24 from "@assets/modi24.png";
+import modi25 from "@assets/modi25.png";
+import modi26 from "@assets/modi26.png";
+import modi27 from "@assets/modi27.png";
+import modi28 from "@assets/modi28.png";
+
+import estic1 from "@assets/estic1.png";
+import estic2 from "@assets/estic2.png";
+import estic3 from "@assets/estic3.png";
+
+import ltu1 from "@assets/ltu1.png";
+import ltu2 from "@assets/ltu2.png";
+
+import mosco1 from "@assets/mosco1.png";
+import mosco2 from "@assets/mosco2.png";
+
+import wel from "@assets/wel.png";
+
+import sihdec from "@assets/sihdec.png";
+
 export default function News() {
   return (
     <div className="container mx-auto px-4 py-8 space-y-10">
+      
+      {/* sihdec */}
+      <div className="rounded-2xl bg-gradient-to-br from-yellow-50 via-white to-yellow-100 px-6 py-8 shadow-2xl ring-1 ring-yellow-200/40 backdrop-blur-lg mt-10">
+        <h3 className="text-2xl font-extrabold mb-2 text-yellow-900">August 2024</h3>
+        <p className="text-yellow-900 mb-6">
+          🌟 Honored to Serve as an Evaluator – Smart India Hackathon 2025 🌟<br/>
+I am deeply honored to have served as an Evaluator for the National Screening Round of Smart India Hackathon (SIH) 2025, for both Hardware and Software Editions. The Grand Finale, conducted from December 8 to 12, 2025, across various parts of India, was truly inspiring and showcased the innovation, creativity, and problem-solving skills of young minds from across the nation.
+            </p>
+        <div className="flex justify-center">
+          <img
+            src={sihdec}
+            alt="Brain Pool Fellowship - RMK Engineering College"
+            className="w-full max-w-2xl h-auto object-contain rounded-2xl shadow-xl"
+          />
+        </div>
+      </div>
+
+      {/* Welcoming */}
+      <div className="rounded-2xl bg-gradient-to-br from-green-50 via-white to-green-100 px-6 py-8 shadow-2xl ring-1 ring-green-200/40 backdrop-blur-lg mt-10">
+        <h3 className="text-2xl font-extrabold mb-2 text-green-900">January 2026</h3>
+        <p className="text-green-900 mb-6">
+            🌟 Reflecting on an Incredible 2025 & Welcoming 2026 🌟<br/>
+            2025 has truly been an amazing and memorable year for me. I had the opportunity to visit different countries, deliver keynote speeches, and interact with eminent professors, scientists, and distinguished leaders, including presidents, which enriched my academic vision and global perspective.        </p>
+        <div className="flex justify-center">
+          <img
+            src={wel}
+            alt="UCSI University Visit - RMK Engineering College Collaboration"
+            className="w-full max-w-2xl h-auto object-contain rounded-2xl shadow-xl"
+          />
+        </div>
+      </div>
+
+      {/* LUT */}
+      <div className="rounded-2xl bg-gradient-to-br from-purple-50 via-white to-purple-100 px-6 py-8 shadow-2xl ring-1 ring-purple-200/40 backdrop-blur-lg">
+        <h3 className="text-2xl font-extrabold mb-2 text-purple-800">December 2025</h3>
+        <p className="text-purple-900 mb-4">
+          We had a discussion on 01-12-2025 with Lappeenranta University of Technology (LUT University) -Finland, regarding several key areas of academic collaboration, including student mobility programs, faculty exchange initiatives, collaborative academic programs, and joint research activities.
+        </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 my-8 items-center justify-center">
+          {[ltu1, ltu2].map((photo, idx) => (
+            <div
+              key={idx}
+              className="group relative overflow-hidden rounded-2xl shadow-xl ring-1 ring-yellow-200/40 flex items-center justify-center transition duration-500 hover:-translate-y-2 hover:scale-105 hover:bg-yellow-100 hover:shadow-yellow-200/40"
+            >
+              <img
+                src={photo}
+                alt={`May Keynote Photo ${idx + 1}`}
+                className="w-full h-64 object-cover object-center transition duration-500 group-hover:scale-110 group-hover:brightness-95"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-yellow-900/80 to-transparent px-4 py-2">
+                <span className="text-white font-semibold text-lg">LUT discussion {idx + 1}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        </div>
+
+        {/* Moscow */}
+      <div className="rounded-2xl bg-gradient-to-br from-purple-50 via-white to-purple-100 px-6 py-8 shadow-2xl ring-1 ring-purple-200/40 backdrop-blur-lg">
+        <h3 className="text-2xl font-extrabold mb-2 text-purple-800">December 2025</h3>
+        <p className="text-purple-900 mb-4">
+            💫 Joint research in the field of artificial intelligence with the Center for Advanced AI Research at Plekhanov University – Moscow, Russia 💫 
+        </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 my-10 max-w-6xl mx-auto items-center justify-center">
+
+        {[mosco1, mosco2].map((photo, idx) => (
+          <div
+            key={idx}
+            className="group relative overflow-hidden rounded-2xl shadow-xl ring-1 ring-yellow-200/40 flex items-center justify-center transition duration-500 hover:-translate-y-2 hover:scale-105 hover:bg-yellow-100 hover:shadow-yellow-200/40"
+          >
+            <img
+              src={photo}
+              alt={`May Keynote Photo ${idx + 1}`}
+              className="w-full h-80 lg:h-96 object-cover object-center transition duration-500 group-hover:scale-110 group-hover:brightness-95"
+            />
+
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-yellow-900/80 to-transparent px-4 py-2">
+              <span className="text-white font-semibold text-lg">
+                Plekhanov University {idx + 1}
+              </span>
+            </div>
+          </div>
+        ))}
+
+      </div>
+
+        </div>
+
+      {/* ESTIC */}
+      <div className="rounded-2xl bg-gradient-to-br from-blue-50 via-white to-blue-100 px-6 py-8 shadow-2xl ring-1 ring-blue-200/40 backdrop-blur-lg">
+        <h2 className="text-xl font-semibold mb-2 text-blue-700">November 2025</h2>
+        <p className="text-gray-700 font-medium mb-4">
+          🌟 Honored to Share My Experience at ESTIC 2025! 🌟
+I am truly delighted to have attended and interacted with some of the most inspiring and humble leaders during the Emerging Science, Technology and Innovation Conclave (ESTIC-2025) held from 3rd – 5th November 2025 at Bharat Mandapam, Pragati Maidan, New Delhi. 🇮🇳
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-8">
+          {[estic1, estic2, estic3].map((photo, idx) => (
+            <div
+              key={idx}
+              className="group relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-blue-200/40 transition duration-500 bg-white backdrop-blur-lg hover:-translate-y-2 hover:scale-105 hover:bg-blue-50 hover:shadow-blue-200/30"
+            >
+              <img
+                src={photo}
+                alt={`Event Photo ${idx + 1}`}
+                className="w-full h-64 object-cover object-center transition duration-500 group-hover:scale-110 group-hover:brightness-90"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-blue-900/80 to-transparent p-4 flex items-end">
+                <span className="text-white font-bold text-lg drop-shadow">ESTIC Photo {idx + 1}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* modi2 */}
+      <div className="rounded-2xl bg-gradient-to-br from-purple-50 via-white to-purple-100 px-6 py-8 shadow-2xl ring-1 ring-purple-200/40 backdrop-blur-lg">
+        <h3 className="text-2xl font-extrabold mb-2 text-purple-800">April 2025</h3>
+        <p className="text-purple-900 mb-4">
+            I am honored to share that I participated under the Young Scientist & Technologist Leaders (below 45 years) category in the Emerging Science, Technology and Innovation Conclave (ESTIC-2025), inaugurated by our Hon’ble Prime Minister of India, Shri Narendra Modi, on 3rd November 2025 at Bharat Mandapam, Pragati Maidan, New Delhi.🇮🇳
+          </p>
+          <div className="columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6 my-8">
+
+          {[modi21, modi22, modi23, modi24, modi25, modi26, modi27, modi28].map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt={`Portrait ${i}`}
+              className="w-full rounded-2xl shadow-xl object-contain hover:scale-105 transition duration-300 break-inside-avoid"
+            />
+          ))}
+
+        </div>
+
+      </div>
+
+      {/* Modi */}
+      <div className="rounded-2xl bg-gradient-to-br from-pink-50 via-white to-pink-100 px-6 py-8 shadow-2xl ring-1 ring-pink-200/40 backdrop-blur-lg mt-10">
+        <h3 className="text-2xl font-extrabold mb-2 text-pink-900">November 2025</h3>
+        <p className="text-pink-900 mb-6">
+            I am delighted to share that I have been selected under the Young Scientist & Technologist Leaders (below 45 years)category to participate at the Emerging Science, Technology and Innovation Conclave (ESTIC-2025), which will be inaugurated by our Honorable Prime Minister of India from 3rd to 5th November 2025 at Bharat Mandapam Pragati Maidan, New Delhi. 💫
+        </p>
+        <div className="space-y-8 my-8">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <img
+            src={modi1}
+            alt="Portrait 1"
+            className="w-full max-w-md mx-auto h-auto object-contain rounded-2xl shadow-xl"
+          />
+
+          <img
+            src={modi2}
+            alt="Portrait 2"
+            className="w-full max-w-md mx-auto h-auto object-contain rounded-2xl shadow-xl"
+          />
+        </div>
+
+        <div className="flex justify-center">
+          <img
+            src={modi3}
+            alt="Landscape"
+            className="w-full max-w-3xl h-auto object-contain rounded-2xl shadow-xl"
+          />
+        </div>
+
+</div>
+
+      </div>
+
+      {/* prof */}
+      <div className="rounded-2xl bg-gradient-to-br from-purple-50 via-white to-purple-100 px-6 py-8 shadow-2xl ring-1 ring-purple-200/40 backdrop-blur-lg">
+        <h3 className="text-2xl font-extrabold mb-2 text-purple-800">October 2025</h3>
+        <p className="text-purple-900 mb-4">
+          💫 Happy to meet Prof. John Woodward, Head of the School of Mathematical and Computer Sciences at Heriot-Watt University, on 08-10-2025 during my visit to the UAE, to discuss potential joint collaborative research in the areas of Artificial Intelligence, Machine Learning, and Autonomous Systems.
+        </p>
+        <div className="flex justify-center items-center my-8">
+          <img
+            src={prof1}
+            alt="DST-SERB Grant Announcement"
+            className="w-full max-w-lg h-auto object-contain rounded-2xl shadow-xl"
+          />
+          
+        </div>
+      </div>
+
+      {/* R&D */}
+      <div className="rounded-2xl bg-gradient-to-br from-teal-50 via-white to-teal-100 px-6 py-8 shadow-2xl ring-1 ring-teal-200/40 backdrop-blur-lg">
+        <h3 className="text-2xl font-extrabold mb-2 text-teal-900">October 2025</h3>
+        <p className="text-teal-900 mb-4">
+          Greatly honored to participate in the R&D Forum on “RTA Transportation Research and Innovation,” held on 07 October 2025 at the RTA Centre, Birmingham University Dubai.<br/>
+          This insightful forum focused on safety, sustainability, and emerging & seamless mobility, fostering discussions on collaborative research and joint projects aimed at advancing transportation innovation in the UAE.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 my-8">
+        <img
+          src={rd1}
+          alt="INTI University Entrance"
+          className="w-full h-80 lg:h-96 object-contain bg-white rounded-2xl shadow-xl"
+        />
+        <img
+          src={rd2}
+          alt="INTI University Meeting"
+          className="w-full h-80 lg:h-96 object-contain bg-white rounded-2xl shadow-xl"
+        />
+      </div>
+
+      </div>
+
+      {/* BITS */}
+      <div className="rounded-2xl bg-gradient-to-br from-blue-50 via-white to-blue-100 px-6 py-8 shadow-2xl ring-1 ring-blue-200/40 backdrop-blur-lg">
+        <h2 className="text-xl font-semibold mb-2 text-blue-700">October 2025</h2>
+        <p className="text-gray-700 font-medium mb-4">
+          Happy to share that I attended the International Conference on Artificial Intelligence and Networking (ICAIN-2025) at BITS Pilani, Dubai Campus, organized in association with the Indian Institute of Information Technology, Allahabad, where I had the privilege of presenting our collaborative research work with Sunway University, Malaysia. 🇮🇳🤝🇲🇾
+This opportunity would not have been possible without the unwavering support and encouragement of R.M.K. Engineering College and its leadership, who continuously inspire and empower faculty members to participate in such prestigious global academic events.
+Grateful for this experience and the chance to exchange ideas with researchers and experts in the field of AI and Networking.🌐
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-8">
+          {[bits1, bits2, bits3, bits4].map((photo, idx) => (
+            <div
+              key={idx}
+              className="group relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-blue-200/40 transition duration-500 bg-white backdrop-blur-lg hover:-translate-y-2 hover:scale-105 hover:bg-blue-50 hover:shadow-blue-200/30"
+            >
+              <img
+                src={photo}
+                alt={`Event Photo ${idx + 1}`}
+                className="w-full h-64 object-cover object-center transition duration-500 group-hover:scale-110 group-hover:brightness-90"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-blue-900/80 to-transparent p-4 flex items-end">
+                <span className="text-white font-bold text-lg drop-shadow">Event Photo {idx + 1}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Keynotelink */}
+      <div className="rounded-2xl bg-gradient-to-br from-gray-50 via-white to-gray-100 px-6 py-8 shadow-2xl ring-1 ring-gray-200/40 backdrop-blur-lg mt-10">
+        <h3 className="text-2xl font-extrabold mb-2 text-gray-900">October 2024</h3>
+        <p className="text-gray-900 font-medium mb-6">
+          🌍✨ I am delighted to share that I will be joining as a Keynote Speaker at the 2nd International Conference on Artificial Intelligence, Robotics, and Cybersecurity for Emerging Technologies (AIRCET’25), which will take place from October 29–31, 2025, at the Higher School of Technology Essaouira, Cadi Ayyad University, Morocco. 🇲🇦
+        </p>
+        <div className="flex justify-center">
+          <img
+            src={keynotelink}
+            alt="Presenting Research Paper at Taylors University"
+            className="w-full max-w-3xl h-auto object-contain rounded-2xl shadow-2xl"
+          />
+        </div>
+      </div>
+
+      {/* Recognization */}
+      <div className="rounded-2xl bg-gradient-to-br from-purple-50 via-white to-purple-100 px-6 py-8 shadow-2xl ring-1 ring-purple-200/40 backdrop-blur-lg">
+        <h3 className="text-2xl font-extrabold mb-2 text-purple-800">August 2025</h3>
+        <p className="text-purple-900 mb-4">
+            𝐑𝐞𝐜𝐨𝐠𝐧𝐢𝐳𝐞𝐝 𝐀𝐦𝐨𝐧𝐠 𝐭𝐡𝐞 𝐓𝐨𝐩 2% 𝐒𝐜𝐢𝐞𝐧𝐭𝐢𝐬𝐭𝐬 𝐖𝐨𝐫𝐥𝐝𝐰𝐢𝐝𝐞 (𝐒𝐭𝐚𝐧𝐟𝐨𝐫𝐝 – 𝐄𝐥𝐬𝐞𝐯𝐢𝐞𝐫 2025) 𝐟𝐨𝐫 𝐭𝐡𝐞 Third 𝐜𝐨𝐧𝐬𝐞𝐜𝐮𝐭𝐢𝐯𝐞 𝐲𝐞𝐚𝐫, 𝐛𝐚𝐬𝐞𝐝 𝐨𝐧 𝐄𝐥𝐬𝐞𝐯𝐢𝐞𝐫’𝐬 𝐮𝐩𝐝𝐚𝐭𝐞𝐝 𝐜𝐢𝐭𝐚𝐭𝐢𝐨𝐧 𝐢𝐧𝐝𝐢𝐜𝐚𝐭𝐨𝐫𝐬. <br/>
+            I’m delighted to share that I have been recognized as one of the World’s Top 2% Scientists in Artificial Intelligence & Image Processing  for the Third consecutive year (2023,2024 and 2025), published by Elsevier-Scopus and Stanford University
+        </p>
+        <div className="flex justify-center items-center my-8">
+          <img
+            src={Recognized}
+            alt="DST-SERB Grant Announcement"
+            className="w-full max-w-lg h-auto object-contain rounded-2xl shadow-xl"
+          />
+        </div>
+      </div>
 
       {/* First Event: Keynote & Gallery */}
       <div className="rounded-2xl bg-gradient-to-br from-blue-50 via-white to-blue-100 px-6 py-8 shadow-2xl ring-1 ring-blue-200/40 backdrop-blur-lg">
