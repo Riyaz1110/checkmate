@@ -93,23 +93,8 @@ export default function News() {
   return (
     <div className="container mx-auto px-4 py-8 space-y-10">
       
-      {/* sihdec */}
-      <div className="rounded-2xl bg-gradient-to-br from-yellow-50 via-white to-yellow-100 px-6 py-8 shadow-2xl ring-1 ring-yellow-200/40 backdrop-blur-lg mt-10">
-        <h3 className="text-2xl font-extrabold mb-2 text-yellow-900">August 2024</h3>
-        <p className="text-yellow-900 mb-6">
-          🌟 Honored to Serve as an Evaluator – Smart India Hackathon 2025 🌟<br/>
-I am deeply honored to have served as an Evaluator for the National Screening Round of Smart India Hackathon (SIH) 2025, for both Hardware and Software Editions. The Grand Finale, conducted from December 8 to 12, 2025, across various parts of India, was truly inspiring and showcased the innovation, creativity, and problem-solving skills of young minds from across the nation.
-            </p>
-        <div className="flex justify-center">
-          <img
-            src={sihdec}
-            alt="Brain Pool Fellowship - RMK Engineering College"
-            className="w-full max-w-2xl h-auto object-contain rounded-2xl shadow-xl"
-          />
-        </div>
-      </div>
 
-      {/* Welcoming */}
+            {/* Welcoming */}
       <div className="rounded-2xl bg-gradient-to-br from-green-50 via-white to-green-100 px-6 py-8 shadow-2xl ring-1 ring-green-200/40 backdrop-blur-lg mt-10">
         <h3 className="text-2xl font-extrabold mb-2 text-green-900">January 2026</h3>
         <p className="text-green-900 mb-6">
@@ -123,6 +108,24 @@ I am deeply honored to have served as an Evaluator for the National Screening Ro
           />
         </div>
       </div>
+
+      {/* sihdec */}
+      <div className="rounded-2xl bg-gradient-to-br from-yellow-50 via-white to-yellow-100 px-6 py-8 shadow-2xl ring-1 ring-yellow-200/40 backdrop-blur-lg mt-10">
+        <h3 className="text-2xl font-extrabold mb-2 text-yellow-900">December 2025</h3>
+        <p className="text-yellow-900 mb-6">
+          🌟 Honored to Serve as an Evaluator – Smart India Hackathon 2025 🌟<br/>
+I am deeply honored to have served as an Evaluator for the National Screening Round of Smart India Hackathon (SIH) 2025, for both Hardware and Software Editions. The Grand Finale, conducted from December 8 to 12, 2025, across various parts of India, was truly inspiring and showcased the innovation, creativity, and problem-solving skills of young minds from across the nation.
+            </p>
+        <div className="flex justify-center">
+          <img
+            src={sihdec}
+            alt="Brain Pool Fellowship - RMK Engineering College"
+            className="w-full max-w-2xl h-auto object-contain rounded-2xl shadow-xl"
+          />
+        </div>
+      </div>
+
+
 
       {/* LUT */}
       <div className="rounded-2xl bg-gradient-to-br from-purple-50 via-white to-purple-100 px-6 py-8 shadow-2xl ring-1 ring-purple-200/40 backdrop-blur-lg">
@@ -208,7 +211,7 @@ I am truly delighted to have attended and interacted with some of the most inspi
 
       {/* modi2 */}
       <div className="rounded-2xl bg-gradient-to-br from-purple-50 via-white to-purple-100 px-6 py-8 shadow-2xl ring-1 ring-purple-200/40 backdrop-blur-lg">
-        <h3 className="text-2xl font-extrabold mb-2 text-purple-800">April 2025</h3>
+        <h3 className="text-2xl font-extrabold mb-2 text-purple-800">November 2025</h3>
         <p className="text-purple-900 mb-4">
             I am honored to share that I participated under the Young Scientist & Technologist Leaders (below 45 years) category in the Emerging Science, Technology and Innovation Conclave (ESTIC-2025), inaugurated by our Hon’ble Prime Minister of India, Shri Narendra Modi, on 3rd November 2025 at Bharat Mandapam, Pragati Maidan, New Delhi.🇮🇳
           </p>
@@ -328,7 +331,7 @@ Grateful for this experience and the chance to exchange ideas with researchers a
 
       {/* Keynotelink */}
       <div className="rounded-2xl bg-gradient-to-br from-gray-50 via-white to-gray-100 px-6 py-8 shadow-2xl ring-1 ring-gray-200/40 backdrop-blur-lg mt-10">
-        <h3 className="text-2xl font-extrabold mb-2 text-gray-900">October 2024</h3>
+        <h3 className="text-2xl font-extrabold mb-2 text-gray-900">October 2025</h3>
         <p className="text-gray-900 font-medium mb-6">
           🌍✨ I am delighted to share that I will be joining as a Keynote Speaker at the 2nd International Conference on Artificial Intelligence, Robotics, and Cybersecurity for Emerging Technologies (AIRCET’25), which will take place from October 29–31, 2025, at the Higher School of Technology Essaouira, Cadi Ayyad University, Morocco. 🇲🇦
         </p>
