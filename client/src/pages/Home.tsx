@@ -9,12 +9,12 @@ import { Button } from "@/components/ui/button";
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
 import { Mail } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Database, Brain, Cloud, LineChart } from "lucide-react";
 import { motion } from "framer-motion";
 import intiLogo from "@assets/inti-logo.png";
 import ucsiLogo from "@assets/ucsi-logo.png";
 import VideoSection from "@/components/VideoSection";
 import rmkLogo from "@assets/rmk-logo.png";
+import { Brain, LineChart, MousePointer } from "lucide-react";
 /* ---------------- Refined Animation Variants ---------------- */
 
 const sectionVariants = {
@@ -42,12 +42,20 @@ const cardVariants = {
   }),
 };
 
+const expertiseAreas = [
+  { name: "Artificial Intelligence", icon: "Brain" },
+  { name: "Data Science", icon: "BarChart3" },
+  { name: "Human Computer Interaction", icon: "Mouse" }
+];
+
+<ExpertiseCards expertiseAreas={expertiseAreas} />
+
 const iconMap = {
-  database: Database,
-  brain: Brain,
-  cloud: Cloud,
-  chart: LineChart,
+  ai: Brain,
+  data: LineChart,
+  hci: MousePointer,
 };
+
 
 /* ---------------- Hero Section - Reduced Font Sizes ---------------- */
 
@@ -266,7 +274,8 @@ function ExpertiseCards({ expertiseAreas }) {
           Specialized domains of research and professional practice
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto">
+
           {expertiseAreas.map((area, index) => {
             const Icon = iconMap[area.icon];
             return (
@@ -317,11 +326,11 @@ function ExpertiseCards({ expertiseAreas }) {
 
 export default function Home() {
   const expertiseAreas = [
-    { name: "Big Data", icon: "database" },
-    { name: "Data Science", icon: "chart" },
-    { name: "Machine Learning", icon: "brain" },
-    { name: "Cloud Computing", icon: "cloud" },
-  ];
+  { name: "Artificial Intelligence", icon: "ai" },
+  { name: "Data Science", icon: "data" },
+  { name: "Human Computer Interaction", icon: "hci" },
+];
+
 
   const achievements = [
     { value: "2", label: "World's Top Scientist", icon: "trophy" },
@@ -449,8 +458,8 @@ export default function Home() {
                             className="px-4 py-2 bg-gradient-to-r from-indigo-100/80 to-green-100/80 text-indigo-700 font-bold text-sm lg:text-base rounded-xl shadow-md backdrop-blur-sm border border-indigo-200/60 hover:shadow-lg transition-all duration-300 cursor-default"
                             whileHover={{ scale: 1.05 }}
                           >
-                            Sep 2024 - Present
-                            <span className="block font-normal text-indigo-600 text-xs">1yrs 6mo</span>
+                            Sep 2021 - Till Date
+                            {/* <span className="block font-normal text-indigo-600 text-xs">1yrs 6mo</span> */}
                           </motion.div>
                           
                           {/* <motion.div 

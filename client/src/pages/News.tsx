@@ -91,7 +91,8 @@ import sihdec from "@assets/sihdec.png";
 
 export default function News() {
   return (
-    <div className="container mx-auto px-4 py-8 space-y-10">
+    <div className="max-w-6xl mx-auto px-6 space-y-14">
+
       
 
             {/* Welcoming */}
