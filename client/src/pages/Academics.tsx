@@ -64,7 +64,7 @@ export default function Academics() {
 
   const experience = [
     {
-      position: "Professor",
+      position: "Professor - Research",
       institution: "R.M.K. Engineering College",
       department: "Department of Computer Science & Engineering",
       period: "Sep 2021 - Mar 2024",

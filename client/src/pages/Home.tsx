@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import intiLogo from "@assets/inti-logo.png";
 import ucsiLogo from "@assets/ucsi-logo.png";
 import VideoSection from "@/components/VideoSection";
+import rmkLogo from "@assets/rmk-logo.png";
 /* ---------------- Refined Animation Variants ---------------- */
 
 const sectionVariants = {
@@ -387,6 +388,85 @@ export default function Home() {
 
             <div className="max-w-5xl mx-auto space-y-8 lg:space-y-12">
               
+              
+              {/* 🌟 INTI - ULTIMATE CARD DESIGN */}
+              <motion.div
+                className="group relative overflow-hidden"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                whileHover={{ y: -10 }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/3 via-indigo-500/2 to-blue-500/3 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-700" />
+                
+                <Card className="relative p-8 lg:p-12 border-0 shadow-2xl lg:shadow-3xl hover:shadow-blue-500/20 bg-white/80 backdrop-blur-xl border border-blue-100/60 hover:border-blue-200/80 transition-all duration-700 rounded-3xl overflow-hidden hover:bg-gradient-to-br hover:from-blue-50/60 hover:to-indigo-50/60">
+                  
+                  {/* Animated border glow */}
+                  <motion.div 
+                    className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-500 opacity-0 group-hover:opacity-30 blur-xl"
+                    animate={{ scale: [1, 1.05, 1] }}
+                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                  />
+                  
+                  <div className="relative z-10 flex gap-6 lg:gap-8 items-start h-full">
+                    
+                    {/* 🚀 LOGO CONTAINER - 3D PERSPECTIVE */}
+                    <motion.div
+                      className="relative flex-shrink-0 pt-4"
+                      whileHover={{ scale: 1.08, rotateY: 10 }}
+                      transition={{ type: "spring", stiffness: 400, damping: 20 }}
+                    >
+                      <div className="relative">
+                        <div className="absolute -inset-2 lg:-inset-2.5 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-2xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
+                        <div className="w-20 h-20 lg:w-28 lg:h-28 p-4 lg:p-5 bg-white/90 shadow-2xl rounded-2xl lg:rounded-3xl border-2 border-blue-100/70 hover:border-blue-300/80 backdrop-blur-xl group-hover:shadow-2xl group-hover:shadow-blue-300/50 transition-all duration-700 transform hover:-rotate-3">
+                          <img
+                            src={rmkLogo}
+                            alt="INTI International University"
+                            className="w-full h-full object-contain rounded-xl shadow-lg group-hover:scale-105 transition-all duration-500"
+                          />
+                        </div>
+                      </div>
+                    </motion.div>
+
+                    {/* ✨ CONTENT - ELEGANT TYPOGRAPHY */}
+                    <div className="flex-1 min-w-0 py-2">
+                      <motion.h3 
+                        className="text-xl lg:text-2xl xl:text-3xl font-black text-gray-900 group-hover:text-blue-700 transition-all duration-500 mb-3 leading-tight"
+                        whileHover={{ scale: 1.02 }}
+                      >
+                        Professor - Research
+                      </motion.h3>
+                      
+                      <div className="space-y-2">
+                        <p className="text-base lg:text-lg font-semibold text-gray-700 mb-3 leading-relaxed">
+                          R.M.K Engineering College
+                          <span className="text-blue-600 font-bold block text-sm lg:text-base">· Full-time</span>
+                        </p>
+                        
+                        {/* 🏆 STATUS BARS */}
+                        <div className="flex flex-wrap gap-3 mb-4">
+                          <motion.div 
+                            className="px-4 py-2 bg-gradient-to-r from-indigo-100/80 to-green-100/80 text-indigo-700 font-bold text-sm lg:text-base rounded-xl shadow-md backdrop-blur-sm border border-indigo-200/60 hover:shadow-lg transition-all duration-300 cursor-default"
+                            whileHover={{ scale: 1.05 }}
+                          >
+                            Sep 2024 - Present
+                            <span className="block font-normal text-indigo-600 text-xs">1yrs 6mo</span>
+                          </motion.div>
+                          
+                          {/* <motion.div 
+                            className="px-4 py-2 bg-gradient-to-r from-emerald-100/80 to-green-100/80 text-emerald-700 font-bold text-sm lg:text-base rounded-xl shadow-md backdrop-blur-sm border border-emerald-200/60 flex items-center hover:shadow-lg transition-all duration-300 cursor-default"
+                            whileHover={{ scale: 1.05 }}
+                          >
+                            <div className="w-2.5 h-2.5 bg-emerald-500 rounded-full mr-2 shadow-lg"></div>
+                            Hybrid · Kuala Lumpur, Malaysia
+                          </motion.div> */}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </motion.div>
+
               {/* 🌟 INTI - ULTIMATE CARD DESIGN */}
               <motion.div
                 className="group relative overflow-hidden"
