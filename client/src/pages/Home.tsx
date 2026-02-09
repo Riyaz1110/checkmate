@@ -680,10 +680,10 @@ export default function Home() {
           linkedin="https://linkedin.com"
           youtube="https://youtube.com"
         />
-        <p className="text-center text-sm text-gray-300 py-8 border-t border-white/20 relative z-10">
+        {/* <p className="text-center text-sm text-gray-300 py-8 border-t border-white/20 relative z-10">
           © {new Date().getFullYear()} R.M.K. Engineering College | 
           <span className="font-semibold text-indigo-300 ml-1">Crafted with 💙 by MOHAMED RIYAZ I</span>
-        </p>
+        </p> */}
       </footer>
     </div>
   );
