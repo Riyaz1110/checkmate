@@ -334,12 +334,12 @@ export default function Home() {
 
   const achievements = [
     { value: "2", label: "World's Top Scientist", icon: "trophy" },
-    { value: "17%", label: "Course & Industry Training", icon: "education" },
-    { value: "3", label: "Professional Society Membership", icon: "users" },
+    { label: "Post Doc with Fellowship", icon: "education" },
+    { value: "7", label: "Professional Society Membership", icon: "users" },
   ];
 
   const contactInfo = {
-    address: "No 14 A Manjanman Kovil Street, Kanchipadu, Thiruvalur - 631704",
+    address: "No 14 A  Kanchipadu, Thiruvalur - 631704",
     city: "Chennai, Tamil Nadu, India 600034",
     email: "drsnk730@gmail.com",
     linkedin: "https://linkedin.com",
@@ -426,16 +426,18 @@ export default function Home() {
                       transition={{ type: "spring", stiffness: 400, damping: 20 }}
                     >
                       <div className="relative">
-                        <div className="absolute -inset-2 lg:-inset-2.5 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-2xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
-                        <div className="w-20 h-20 lg:w-28 lg:h-28 p-4 lg:p-5 bg-white/90 shadow-2xl rounded-2xl lg:rounded-3xl border-2 border-blue-100/70 hover:border-blue-300/80 backdrop-blur-xl group-hover:shadow-2xl group-hover:shadow-blue-300/50 transition-all duration-700 transform hover:-rotate-3">
+                        <div className="absolute -inset-3 lg:-inset-4 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-3xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
+
+                        <div className="w-28 h-28 lg:w-36 lg:h-36 p-5 lg:p-6 bg-white/90 shadow-2xl rounded-3xl border-2 border-blue-100/70 hover:border-blue-300/80 backdrop-blur-xl group-hover:shadow-blue-300/50 transition-all duration-700 transform hover:-rotate-3">
                           <img
                             src={rmkLogo}
                             alt="INTI International University"
-                            className="w-full h-full object-contain rounded-xl shadow-lg group-hover:scale-105 transition-all duration-500"
+                            className="w-full h-full object-contain rounded-2xl shadow-lg group-hover:scale-105 transition-all duration-500"
                           />
                         </div>
                       </div>
                     </motion.div>
+
 
                     {/* ✨ CONTENT - ELEGANT TYPOGRAPHY */}
                     <div className="flex-1 min-w-0 py-2">
@@ -504,16 +506,18 @@ export default function Home() {
                       transition={{ type: "spring", stiffness: 400, damping: 20 }}
                     >
                       <div className="relative">
-                        <div className="absolute -inset-2 lg:-inset-2.5 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-2xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
-                        <div className="w-20 h-20 lg:w-28 lg:h-28 p-4 lg:p-5 bg-white/90 shadow-2xl rounded-2xl lg:rounded-3xl border-2 border-blue-100/70 hover:border-blue-300/80 backdrop-blur-xl group-hover:shadow-2xl group-hover:shadow-blue-300/50 transition-all duration-700 transform hover:-rotate-3">
+                        <div className="absolute -inset-3 lg:-inset-4 bg-gradient-to-br from-blue-400/20 to-indigo-400/20 rounded-3xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
+
+                        <div className="w-28 h-28 lg:w-36 lg:h-36 p-5 lg:p-6 bg-white/90 shadow-2xl rounded-3xl border-2 border-blue-100/70 hover:border-blue-300/80 backdrop-blur-xl group-hover:shadow-blue-300/50 transition-all duration-700 transform hover:-rotate-3">
                           <img
                             src={intiLogo}
                             alt="INTI International University"
-                            className="w-full h-full object-contain rounded-xl shadow-lg group-hover:scale-105 transition-all duration-500"
+                            className="w-full h-full object-contain rounded-2xl shadow-lg group-hover:scale-105 transition-all duration-500"
                           />
                         </div>
                       </div>
                     </motion.div>
+
 
                     {/* ✨ CONTENT - ELEGANT TYPOGRAPHY */}
                     <div className="flex-1 min-w-0 py-2">
@@ -580,16 +584,18 @@ export default function Home() {
                       transition={{ type: "spring", stiffness: 400, damping: 20 }}
                     >
                       <div className="relative">
-                        <div className="absolute -inset-2 lg:-inset-2.5 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-2xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
-                        <div className="w-20 h-20 lg:w-28 lg:h-28 p-4 lg:p-5 bg-white/90 shadow-2xl rounded-2xl lg:rounded-3xl border-2 border-purple-100/70 hover:border-purple-300/80 backdrop-blur-xl group-hover:shadow-2xl group-hover:shadow-purple-300/50 transition-all duration-700 transform hover:-rotate-3">
+                        <div className="absolute -inset-3 lg:-inset-4 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-3xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
+
+                        <div className="w-28 h-28 lg:w-36 lg:h-36 p-5 lg:p-6 bg-white/90 shadow-2xl rounded-3xl border-2 border-purple-100/70 hover:border-purple-300/80 backdrop-blur-xl group-hover:shadow-purple-300/50 transition-all duration-700 transform hover:-rotate-3">
                           <img
                             src={ucsiLogo}
                             alt="UCSI University"
-                            className="w-full h-full object-contain rounded-xl shadow-lg group-hover:scale-105 transition-all duration-500"
+                            className="w-full h-full object-contain rounded-2xl shadow-lg group-hover:scale-105 transition-all duration-500"
                           />
                         </div>
                       </div>
                     </motion.div>
+
 
                     <div className="flex-1 min-w-0 py-2">
                       <motion.h3 

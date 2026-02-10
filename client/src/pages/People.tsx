@@ -20,23 +20,23 @@ export default function People() {
     {
       name: "Mr. Shine Henry (Ph.D)",
       role: "Assistant Professor",
-      area: "Ph.D. in Information and Communication Engineering Anna University",
+      area: "Jeppiaar Institute of Technology",
       email: "shinehenry@example.com",
-      linkedin: "https://www.linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/shine-henry-22966019a",
       logo: p1,
     },
     {
       name: "Ms. Indhumathi.C (Ph.D)",
-      role: "Ph.D. Candidate",
-      area: "Data Science & Analytics",
+      role: "Assistant Professor",
+      area: "Sri Sai Ram Engineering College",
       email: "indhumathi@example.com",
-      linkedin: "https://www.linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/indhumathi-c-8220b210 ",
       logo: p2,
     },
     {
       name: "Mr. Premkumar.R",
-      role: "M.E. Student",
-      area: "Cloud Computing",
+      role: "Assistant Professor",
+      area: "R.M.K College of Engineering and Technology",
       email: "premkumar@example.com",
       linkedin: "https://www.linkedin.com/",
       logo: p3,
@@ -49,8 +49,8 @@ export default function People() {
       course: "M.E. Computer Science and Engineering",
       institution: "R.M.K Engineering College",
       image: p4,
-      linkedin: "https://linkedin.com/",
-      email: "thamaraiselvan@example.com",
+      linkedin: "https://www.linkedin.com/in/thamaraiselvan-k-52b174246 ",
+      // email: "thamaraiselvan@example.com",
     },
   ];
 
@@ -126,7 +126,7 @@ export default function People() {
       {/* Doctorate Section Title */}
       <div className="text-center mb-12">
         <h2 className="text-2xl font-bold text-primary tracking-wide">
-          Doctorate
+          Ph.D  Students
         </h2>
         <div className="w-24 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
       </div>
@@ -174,14 +174,14 @@ export default function People() {
 
               <div className="flex flex-col gap-2 w-full">
 
-                <a
+                {/* <a
                   href={`mailto:${person.email}`}
                   className="inline-flex items-center justify-center gap-2 px-4 py-2 border rounded-md text-sm font-medium text-primary border-primary transition-all duration-300 hover:bg-gradient-to-r hover:from-sky-100 hover:to-pink-100"
                   data-testid={`button-email-${index}`}
                 >
                   <Mail className="h-4 w-4 animate-bounce" />
                   Contact
-                </a>
+                </a> */}
 
 
                 {person.linkedin && (
@@ -264,14 +264,14 @@ export default function People() {
             LinkedIn
           </a>
 
-          <a
+          {/* <a
             href={`mailto:${student.email}`}
             className="inline-flex items-center px-4 py-2 border rounded-md text-sm font-medium text-primary border-primary hover:bg-gradient-to-r hover:from-sky-100 hover:to-pink-100 transition-all duration-300"
             data-testid={`button-email-master-${idx}`}
           >
             <Mail className="h-5 w-5 animate-bounce" />
             Contact
-          </a>
+          </a> */}
 
         </div>
       </div>
