@@ -131,19 +131,15 @@ const styles = {
     flexDirection: "column",
     alignItems: "center"
   },
-  header: {
-  width: "100%",
-  padding: "60px 20px 40px",
-  textAlign: "center",
-  background: "linear-gradient(135deg,#f8fafc,#e2e8f0)",
-  borderBottom: "1px solid #e5e7eb",
-  boxShadow: "0 6px 24px rgba(0,0,0,0.06)"
-},
+//   header: {
+//   width: "100%",
+//   padding: "60px 20px 40px",
+//   textAlign: "center",
+//   background: "linear-gradient(135deg,#f8fafc,#e2e8f0)",
+//   borderBottom: "1px solid #e5e7eb",
+//   boxShadow: "0 6px 24px rgba(0,0,0,0.06)"
+// },
 
-labTitle: {
-  lineHeight: 1.3,
-  margin: 0
-},
 
 mainTitle: {
   fontSize: "3.2rem",
@@ -188,7 +184,7 @@ subTitle: {
     lineHeight: 1.3,
     textAlign: "center",
     maxWidth: "1000px",
-    margin: "0 auto"
+    margin: "0 auto",
   },
 
   greenText: {
