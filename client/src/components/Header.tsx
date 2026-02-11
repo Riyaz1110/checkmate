@@ -12,8 +12,8 @@ const navItems = [
   { name: "Publications", path: "/publications" },
   { name: "Opportunities", path: "/opportunities" },
   { name: "Honors", path: "/honors" },
-  { name: "Research Topics", path: "/research" },
-  { name: "Labs", path: "/labs" },
+  { name: "Research", path: "/research" },
+  { name: "Research Lab", path: "/labs" },
 ];
 
 export default function Header() {

@@ -60,6 +60,10 @@ import aug2020HackathonImg from "@assets/aug2020_hackathon.png"; // Hackathon wi
 import rd1 from "@assets/rd1.png";
 import rd2 from "@assets/rd2.png";
 
+import sch1 from "@assets/sch1.png";
+
+import sch2 from "@assets/sch2.png";
+
 import prof1 from "@assets/prof1.png"; 
 
 import modi1 from "@assets/modi1.png";
@@ -93,9 +97,30 @@ export default function News() {
   return (
     <div className="max-w-6xl mx-auto px-6 space-y-14">
 
-      
+      {/* scholar */}
+      <div className="rounded-2xl bg-gradient-to-br from-teal-50 via-white to-teal-100 px-6 py-8 shadow-2xl ring-1 ring-teal-200/40 backdrop-blur-lg">
+        <h3 className="text-2xl font-extrabold mb-2 text-teal-900">February 2026</h3>
+        <p className="text-teal-900 mb-4 text-justify leading-relaxed">
+          I am excited to share that I have crossed 5000+ citations on Google Scholar, with an H-Index of 38! 🎉
+          This milestone reflects not just numbers, but years of dedication, collaborative research, and a shared passion for advancing knowledge.
+          I am incredibly deeply grateful to my co-authors and mentors whose guidance, collaboration, and insights have been invaluable throughout this journey.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 my-8">
+        <img
+          src={sch1}
+          alt="INTI University Entrance"
+          className="w-full h-80 lg:h-96 object-contain bg-white rounded-2xl shadow-xl"
+        />
+        <img
+          src={sch2}
+          alt="INTI University Meeting"
+          className="w-full h-80 lg:h-96 object-contain bg-white rounded-2xl shadow-xl"
+        />
+      </div>
 
-            {/* Welcoming */}
+      </div>
+      
+      {/* Welcoming */}
       <div className="rounded-2xl bg-gradient-to-br from-green-50 via-white to-green-100 px-6 py-8 shadow-2xl ring-1 ring-green-200/40 backdrop-blur-lg mt-10">
         <h3 className="text-2xl font-extrabold mb-2 text-green-900">January 2026</h3>
         <p className="text-green-900 mb-6 text-justify leading-relaxed">

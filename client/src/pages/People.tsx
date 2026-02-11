@@ -13,7 +13,7 @@ import p6 from "@assets/image6.png";
 import p7 from "@assets/image7.png";
 import p8 from "@assets/image8.png";
 import p9 from "@assets/image9.png";
-
+import professorPhoto from "@assets/imagep.png";
 
 export default function People() {
   const people = [
@@ -34,7 +34,7 @@ export default function People() {
       logo: p2,
     },
     {
-      name: "Mr. Premkumar.R",
+      name: "Mr. Premkumar.R (Ph.D)",
       role: "Assistant Professor",
       area: "R.M.K College of Engineering and Technology",
       email: "premkumar@example.com",
@@ -112,15 +112,70 @@ export default function People() {
       <div className="relative z-10">
   <main className="flex-1">
     <div className="container mx-auto px-4 lg:px-8 py-16">
+      <div className="mb-16 flex justify-center">
+  <div className="w-full max-w-4xl">
+
+    <h2 className="text-3xl lg:text-4xl font-extrabold text-center text-red-700 mb-8">
+      Principal Investigator
+    </h2>
+
+    <Card className="
+      flex flex-col md:flex-row items-center gap-6
+      p-6 md:p-8
+      bg-white/90 backdrop-blur-md
+      shadow-xl
+      border border-gray-200
+      rounded-2xl
+      hover:shadow-2xl
+      transition-all duration-300
+    ">
+
+      <img
+        src={professorPhoto}
+        alt="Dr. Neelakandan Subramani"
+        className="
+          w-40 h-48
+          md:w-44 md:h-52
+          object-cover
+          rounded-xl
+          shadow-md
+        "
+      />
+
+      <div className="space-y-2 text-center md:text-left">
+
+        <h3 className="text-xl font-bold text-purple-700">
+          Dr. Neelakandan Subramani
+        </h3>
+
+        <ul className="text-gray-700 space-y-1 text-sm leading-relaxed">
+          <li>Professor – Research</li>
+          <li>Department of Computer Science and Engineering</li>
+          <li>R.M.K. Engineering College, Chennai</li>
+          <li>
+            <span className="font-medium">Email:</span>{" "}
+            snk.cse@rmkec.ac.in | drsnk1730@gmail.com
+          </li>
+        </ul>
+
+      </div>
+    </Card>
+
+  </div>
+</div>
+
+
 
       {/* Page Title */}
       <h1 className="text-4xl lg:text-5xl font-extrabold mb-4 text-center text-gray-800">
         People
       </h1>
+      <br/>
+      <br/>
 
-      <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+      {/* <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
         Meet the passionate team of scholars, researchers, and innovators shaping the future.
-      </p>
+      </p> */}
 
 
       {/* Doctorate Section Title */}

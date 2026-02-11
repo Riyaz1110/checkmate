@@ -1,18 +1,27 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
+    
     <div style={styles.page}>
       {/* Decorative Gradient Overlay */}
       <div style={styles.gradientOverlay}></div>
       
       {/* Header Section with Glassmorphism and Shadow */}
       <div style={styles.header}>
-        <h1 style={styles.labTitle}>
-          <span style={styles.greenText}>Smart Neurocognitive Knowledge and Data Intelligence</span><br />
-          <span style={styles.blueText}>Research Lab - SNKDIR</span>
-        </h1>
-      </div>
+      <h1 style={styles.labTitle}>
+        <span style={styles.mainTitle}>
+          Smart Neurocognitive Knowledge and Data Intelligence
+        </span>
+        <br />
+        <span style={styles.subTitle}>
+          Research Lab – SNKDIR
+        </span>
+      </h1>
+    </div>
+
 
       {/* Introduction Section */}
       <div style={styles.section}>
@@ -55,6 +64,27 @@ export default function Home() {
           Our lab serves as a collaborative research hub encouraging innovation, critical thinking, and problem-solving through hands-on projects, guided mentorship, and cross-disciplinary learning.
         </p>
       </div>
+      {/* Navigation Section */}
+<div style={styles.navSection}>
+  <div style={styles.navCard} onClick={() => navigate("/people")}>
+    <div style={styles.navIcon}>👥</div>
+    <h3 style={styles.navTitle}>Lab Members</h3>
+    <p style={styles.navDesc}>Meet our researchers & scholars</p>
+  </div>
+
+  <div style={styles.navCard} onClick={() => navigate("/projects")}>
+    <div style={styles.navIcon}>🚀</div>
+    <h3 style={styles.navTitle}>Projects</h3>
+    <p style={styles.navDesc}>Explore innovative research works</p>
+  </div>
+
+  <div style={styles.navCard} onClick={() => navigate("/news")}>
+    <div style={styles.navIcon}>📰</div>
+    <h3 style={styles.navTitle}>News</h3>
+    <p style={styles.navDesc}>Latest updates & achievements</p>
+  </div>
+</div>
+
     </div>
   );
 }
@@ -88,6 +118,7 @@ const focusItems = [
 ];
 
 const styles = {
+  
   page: {
     position: "relative",
     minHeight: "100vh",
@@ -100,6 +131,35 @@ const styles = {
     flexDirection: "column",
     alignItems: "center"
   },
+  header: {
+  width: "100%",
+  padding: "60px 20px 40px",
+  textAlign: "center",
+  background: "linear-gradient(135deg,#f8fafc,#e2e8f0)",
+  borderBottom: "1px solid #e5e7eb",
+  boxShadow: "0 6px 24px rgba(0,0,0,0.06)"
+},
+
+labTitle: {
+  lineHeight: 1.3,
+  margin: 0
+},
+
+mainTitle: {
+  fontSize: "3.2rem",
+  fontWeight: 900,
+  color: "#0f172a",
+  letterSpacing: "0.04em"
+},
+
+subTitle: {
+  fontSize: "1.7rem",
+  fontWeight: 700,
+  color: "#2563eb",
+  letterSpacing: "0.12em",
+  textTransform: "uppercase"
+},
+
 
   gradientOverlay: {
     position: "absolute",
@@ -194,6 +254,45 @@ const styles = {
     textAlign: "justify",
     lineHeight: 1.7
   },
+  navSection: {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+  gap: "30px",
+  width: "92%",
+  maxWidth: "1000px",
+  margin: "50px auto",
+  zIndex: 1
+},
+
+navCard: {
+  background: "rgba(255,255,255,0.85)",
+  backdropFilter: "blur(10px)",
+  padding: "30px 25px",
+  borderRadius: "20px",
+  textAlign: "center",
+  cursor: "pointer",
+  transition: "all 0.3s ease",
+  boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+  border: "1px solid rgba(255,255,255,0.6)"
+},
+
+navIcon: {
+  fontSize: "2.5rem",
+  marginBottom: "10px"
+},
+
+navTitle: {
+  fontSize: "1.3rem",
+  fontWeight: "700",
+  marginBottom: "6px",
+  color: "#2b4a6f"
+},
+
+navDesc: {
+  fontSize: "0.95rem",
+  color: "#555"
+},
+
 
   focusIcon: {
     fontSize: "1.72rem",

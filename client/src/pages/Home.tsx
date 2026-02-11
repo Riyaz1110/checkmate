@@ -338,9 +338,13 @@ export default function Home() {
     { value: "7", label: "Professional Society Membership", icon: "users" },
   ];
 
-  const contactInfo = {
-    address: "No 14 A  Kanchipadu, Thiruvalur - 631704",
-    city: "Chennai, Tamil Nadu, India 600034",
+    const contactInfo = {
+    homeAddress: "No 14 A, Kanchipadi,",
+    city: "Thiruvalur - 631704 , Tamil Nadu, India",
+
+    workAddress:
+      "R.M.K. Engineering College, Kavaraipettai, Gummidipoondi Taluk, Tiruvallur District, Tamil Nadu - 601206",
+
     email: "drsnk730@gmail.com",
     linkedin: "https://linkedin.com",
     youtube: "https://youtube.com",
