@@ -1,153 +1,117 @@
 import { Link } from "wouter";
-import { FaLinkedin, FaYoutube } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Github } from "lucide-react";
 
-interface FooterProps {
-  professorName: string;
-  institution: string;
-  email: string;
-  linkedin?: string;
-  youtube?: string;
-}
-
-export default function Footer({
-  professorName,
-  institution,
-  email,
-  linkedin,
-  youtube,
-}: FooterProps) {
-  const currentYear = new Date().getFullYear();
-
+export function Footer() {
   return (
-    <footer className="bg-gradient-to-tr from-slate-800 to-slate-900 text-white border-t border-slate-700">
-      <div className="container mx-auto px-4 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Professor Info */}
+    <footer className="bg-slate-950 text-slate-300 pt-16 pb-8">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          {/* About */}
           <div>
-            <h3
-              className="font-bold text-xl mb-4"
-              data-testid="text-footer-name"
-            >
-              {professorName}
-            </h3>
-            <p className="text-sm text-slate-300 mb-2">{institution}</p>
-            <p className="text-sm text-slate-300">{email}</p>
+            <div className="flex items-center gap-2 mb-6">
+              <div className="h-8 w-8 bg-primary rounded flex items-center justify-center text-white font-bold">
+                R
+              </div>
+              <span className="font-display font-bold text-xl text-white">RMKMATE2026</span>
+            </div>
+            <p className="text-sm leading-relaxed text-slate-400 mb-6">
+              RMKMATE is an international academic conference dedicated to advancing research, innovation, and collaboration in the fields of Artificial Intelligence (AI), Knowledge Management, Intelligent Systems, and Telecommunication Engineering.
+            </p>
+            <div className="flex gap-4">
+              <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-white transition-colors">
+                <Twitter size={18} />
+              </a>
+              <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-white transition-colors">
+                <Facebook size={18} />
+              </a>
+              <a href="#" className="p-2 bg-white/5 rounded-full hover:bg-primary hover:text-white transition-colors">
+                <Linkedin size={18} />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-base tracking-wide mb-4">
-              Quick Links
-            </h4>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-display font-semibold text-white text-lg mb-6">Quick Links</h3>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link
-                  href="/academics"
-                  className="relative text-slate-300 hover:text-white transition-colors duration-200 before:absolute before:bottom-0 before:left-0 before:w-0 hover:before:w-full before:h-[1px] before:bg-white before:transition-all"
-                  data-testid="link-footer-academics"
-                >
-                  Academics & Experience
-                </Link>
+                <Link href="/about-rmkec" className="hover:text-primary transition-colors">About RMKEC</Link>
               </li>
               <li>
-                <Link
-                  href="/projects"
-                  className="relative text-slate-300 hover:text-white transition-colors duration-200 before:absolute before:bottom-0 before:left-0 before:w-0 hover:before:w-full before:h-[1px] before:bg-white before:transition-all"
-                  data-testid="link-footer-projects"
-                >
-                  Projects
-                </Link>
+                <Link href="/committees" className="hover:text-primary transition-colors">Organizing Committee</Link>
               </li>
               <li>
-                <Link
-                  href="/publications"
-                  className="relative text-slate-300 hover:text-white transition-colors duration-200 before:absolute before:bottom-0 before:left-0 before:w-0 hover:before:w-full before:h-[1px] before:bg-white before:transition-all"
-                  data-testid="link-footer-publications"
-                >
-                  Publications
-                </Link>
+                <Link href="/speakers" className="hover:text-primary transition-colors">Keynote Speakers</Link>
+              </li>
+              <li>
+                <Link href="/schedule" className="hover:text-primary transition-colors">Conference Schedule</Link>
+              </li>
+              <li>
+                <Link href="/papers" className="hover:text-primary transition-colors">Paper Submission</Link>
               </li>
             </ul>
           </div>
 
-          {/* More Links */}
+          {/* Contact */}
           <div>
-            <h4 className="font-semibold text-base tracking-wide mb-4">
-              More
-            </h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/opportunities"
-                  className="relative text-slate-300 hover:text-white transition-colors duration-200 before:absolute before:bottom-0 before:left-0 before:w-0 hover:before:w-full before:h-[1px] before:bg-white before:transition-all"
-                  data-testid="link-footer-opportunities"
-                >
-                  Opportunities
-                </Link>
+            <h3 className="font-display font-semibold text-white text-lg mb-6">Contact Us</h3>
+            <ul className="space-y-4 text-sm">
+              <li className="flex items-start gap-3">
+                <MapPin className="text-primary mt-0.5 shrink-0" size={18} />
+                <span>
+                  R.M.K. Engineering College,<br />
+                  RSM Nagar, Kavaraipettai,<br />
+                  Gummidipoondi Taluk,<br />
+                  Thiruvallur District,<br />
+                  Tamil Nadu, India.
+                </span>
               </li>
-              <li>
-                <Link
-                  href="/honors"
-                  className="relative text-slate-300 hover:text-white transition-colors duration-200 before:absolute before:bottom-0 before:left-0 before:w-0 hover:before:w-full before:h-[1px] before:bg-white before:transition-all"
-                  data-testid="link-footer-honors"
-                >
-                  Honors
-                </Link>
+              <li className="flex gap-3">
+                <Phone className="text-primary shrink-0 mt-1" size={18} />
+
+                <div className="flex flex-col">
+                  <span>044 – 6790 6790</span>
+                  <span>Fax: 044 – 6790 6791</span>
+                </div>
               </li>
-              <li>
-                <Link
-                  href="/research"
-                  className="relative text-slate-300 hover:text-white transition-colors duration-200 before:absolute before:bottom-0 before:left-0 before:w-0 hover:before:w-full before:h-[1px] before:bg-white before:transition-all"
-                  data-testid="link-footer-research"
-                >
-                  Research Topics
-                </Link>
+
+              <li className="flex items-center gap-3">
+                <Mail className="text-primary shrink-0" size={18} />
+                <span>rmkmate@rmkec.ac.in</span>
               </li>
             </ul>
           </div>
 
-          {/* Social Icons */}
+          {/* Important Dates */}
           <div>
-            <h4 className="font-semibold text-base tracking-wide mb-4">
-              Connect
-            </h4>
-            <div className="flex gap-4">
-              {linkedin && (
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="hover:scale-110 hover:bg-slate-700 transition-transform duration-200 border-slate-600 text-white"
-                  asChild
-                  data-testid="button-footer-linkedin"
-                >
-                  <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="h-5 w-5" />
-                  </a>
-                </Button>
-              )}
-              {youtube && (
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="hover:scale-110 hover:bg-slate-700 transition-transform duration-200 border-slate-600 text-white"
-                  asChild
-                  data-testid="button-footer-youtube"
-                >
-                  <a href={youtube} target="_blank" rel="noopener noreferrer">
-                    <FaYoutube className="h-5 w-5" />
-                  </a>
-                </Button>
-              )}
-            </div>
+            <h3 className="font-display font-semibold text-white text-lg mb-6">Important Dates</h3>
+            <ul className="space-y-4 text-sm">
+              <li className="flex justify-between items-center border-b border-white/10 pb-2">
+                <span className="text-slate-400">Full Paper Submission</span>
+                <span className="font-medium text-white">Feb 1, 2026</span>
+              </li>
+              <li className="flex justify-between items-center border-b border-white/10 pb-2">
+                <span className="text-slate-400">Acceptance Notification</span>
+                <span className="font-medium text-white">Mar 31, 2026</span>
+              </li>
+              <li className="flex justify-between items-center border-b border-white/10 pb-2">
+                <span className="text-slate-400">Final Paper Submission</span>
+                <span className="font-medium text-white">Apr 4, 2025</span>
+              </li>
+              <li className="flex justify-between items-center border-b border-white/10 pb-2">
+                <span className="text-slate-400">Conference Date</span>
+                <span className="text-primary font-bold">Apr 15-16, 2026</span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Footer Bottom */}
-        <div className="border-t border-slate-700 mt-12 pt-8 text-center text-sm text-slate-400">
-          <p data-testid="text-copyright">
-            © {currentYear} {professorName}. All rights reserved.
-          </p>
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+          <p>© 2026 RMKMATE2026. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
+          </div>
         </div>
       </div>
     </footer>

@@ -3,36 +3,45 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Header from "@/components/Header";
-import ScrollToTop from "@/components/ScrollToTop";
-
-import Home from "@/pages/Home";
-import Academics from "@/pages/Academics";
-import People from "@/pages/People";
-import Projects from "@/pages/Projects";
-import Publications from "@/pages/Publications";
-import Opportunities from "@/pages/Opportunities";
-import Honors from "@/pages/Honors";
-import Research from "@/pages/Research";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import NotFound from "@/pages/not-found";
-import News from "@/pages/News";
-import Labs from "@/pages/Labs";
+import ScrollToTop from "@/components/ScroolToTop";
+
+// Pages
+import Home from "@/pages/Home";
+import Speakers from "@/pages/Speakers";
+import Committees from "@/pages/Committees";
+import Schedule from "@/pages/Schedule";
+import Venue from "@/pages/Venue";
+import Transportation from "@/pages/Transportation";
+import Contact from "@/pages/Contact";
+import PaperSubmission from "@/pages/PaperSubmission";
+import AboutRMKEC from "@/pages/AboutRMKEC"
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/academics" component={Academics} />
-      <Route path="/people" component={People} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/publications" component={Publications} />
-      <Route path="/opportunities" component={Opportunities} />
-      <Route path="/honors" component={Honors} />
-      <Route path="/research" component={Research} />
-      <Route path="/news" component={News} />
-      <Route path="/labs" component={Labs} />
-      <Route component={NotFound} />
-    </Switch>
+    <div className="flex flex-col min-h-screen">
+      <ScrollToTop />
+      <Navigation />
+      <main className="flex-grow">
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/speakers" component={Speakers} />
+          <Route path="/committees" component={Committees} />
+          <Route path="/schedule" component={Schedule} />
+          <Route path="/venue" component={Venue} />
+          <Route path="/transportation" component={Transportation} />
+          <Route path="/about-rmkec" component={AboutRMKEC} />
+
+          <Route path="/contact" component={Contact} />
+          <Route path="/papers" component={PaperSubmission} />
+          <Route path="/paper-submission" component={PaperSubmission} />
+          <Route component={NotFound} />
+        </Switch>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
@@ -40,14 +49,11 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <ScrollToTop />
-        <Header />
-        <Router />
         <Toaster />
+        <Router />
       </TooltipProvider>
     </QueryClientProvider>
   );
 }
-
 
 export default App;
